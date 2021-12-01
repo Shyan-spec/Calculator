@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title"> Welcome To Your Online Calculator</h1>
+    <input id="screen" type="text" disabled="disabled">
+        <div class="container">
+            <button onclick="EnterNumber(7)" onclick="EnterNumbers(7)" class="zone seven">7</button>
+            <button onclick=EnterNumber(8) class="zone eight">8</button>
+            <button onclick=EnterNumber(9) class="zone nine">9</button>
+            <button onclick="clears()" class="zone2 Clear">C</button>
+            <button onclick=EnterNumber(4) class="zone four">4</button>
+            <button onclick=EnterNumber(5) class="zone five">5</button>
+            <button onclick=EnterNumber(6) class="zone six">6</button>
+            <button onclick=Add() class="zone Add">+</button>
+            <button class="zone Subtract">-</button>
+            <button onclick=EnterNumber(3) class="zone two">3</button>
+            <button onclick=EnterNumber(2) class="zone three">2</button>
+            <button onclick=EnterNumber(1) class="zone one">1</button>
+            <button class="zone Multipy">x</button>
+            <button class="zone Divide">/</button>
+            <button onclick=EnterNumber(0) class="zone zero">0</button>
+            <button class="zone decimal">.</button>
+            <button class="zone plusMinus">+/-</button>
+            <button onclick=equal() class="zone2 Equal">=</button>
+            
+    </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

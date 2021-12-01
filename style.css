@@ -1,0 +1,110 @@
+.container{
+    
+    justify-content: center;
+    display: grid;
+    gap:80px;
+    
+    grid-row-gap: 20px;
+    grid-column-gap :20px ;
+    position: fixed;
+    top: 45%;
+    left: 47%;
+    
+    
+    font-size: 30px;
+    line-height: 2.5em;
+    font-family: 'Abril Fatface', cursive;
+    width: 4vw;
+    height:4vw;
+    cursor: pointer;
+
+    
+
+    
+    
+}
+
+#screen{
+    justify-content: center;
+    border-color: black;
+    background-color: white;
+    border-radius: 5%;
+    position: fixed;
+    top: 35%;
+    left: 37%;
+    height: 75px;
+    width:425px;
+
+    
+}
+
+
+.zone{
+    background: lightblue;
+    width: 4vw;
+    height:4vw;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.1s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+body{
+    justify-content: center;
+    background-color: rgb(255, 255, 0);
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    top:10%;
+}
+.title{
+   
+    display:flex;
+    justify-content: center;
+}
+
+.Clear {
+    box-shadow: 5px 5px 5px black;
+    background: red;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    text-align: center;
+    border-radius: 40%;
+    transition: all 0.1s linear;
+    
+}
+
+.Equal {
+    box-shadow: 5px 5px 5px black;
+    background: orange;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    text-align: center;
+    border-radius: 40%;
+    transition: all 0.1s linear;
+}
+
+.Clear:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.Equal:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+    
