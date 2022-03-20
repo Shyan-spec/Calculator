@@ -15,36 +15,64 @@
     line-height: 2.5em;
     font-family: 'Abril Fatface', cursive;
     width: 4vw;
-    height:4vw;
+    height:4vh;
     cursor: pointer;
-
+    
     
 
     
     
 }
 
+@font-face {
+    font-family: 'POCKET CALCULATOR FONT';
+    font-style: normal; 
+    font-weight:normal;
+    src: local('POCKET CALCULATOR FONT'), url('POCKC___.woff') format('woff');
+}
+
+
+
+
 #screen{
-    justify-content: center;
+    
+    height: 80px;
+    position: absolute;
+    bottom:50px;
+    right:-190px;
     border-color: black;
     background-color: white;
     border-radius: 5%;
-    position: fixed;
-    top: 35%;
-    left: 37%;
-    height: 75px;
-    width:425px;
+    width: calc(25rem + 1vw);
+    font-family:  'POCKET CALCULATOR FONT';
+    font-size: 50px;
+    
 
     
 }
 
-
-.zone{
-    background: lightblue;
-    width: 4vw;
-    height:4vw;
-    text-align: center;
+#toggle {
+    min-height: 75px;
+    min-width: 75px;
+    background: black;
+    color: white;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    transition: all 0.1s linear;
+}
+.zone{
+    
+    min-height: 75px;
+    min-width: 75px;
+    background: black;
+    color: white;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    text-align: center;
     box-shadow: 5px 5px 5px black;
     transition: all 0.1s linear;
 }
@@ -59,13 +87,14 @@
 
 body{
     justify-content: center;
-    background-color: rgb(255, 255, 0);
+    background-color: grey;
 }
 
 h1 {
     text-align: center;
-    color: blue;
+    color: rgb(255, 255, 255);
     top:10%;
+    margin-bottom: 3%;
 }
 .title{
    
@@ -86,7 +115,7 @@ h1 {
 
 .Equal {
     box-shadow: 5px 5px 5px black;
-    background: orange;
+    background: red;
     grid-column-start: 4;
     grid-column-end: 6;
     text-align: center;

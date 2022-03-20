@@ -9,9 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="title"> Welcome To Your Online Calculator</h1>
-    <input id="screen" type="text" disabled="disabled">
+    
+    
+      <h1 class="title"> Welcome To Your Online Calculator</h1>
+      
         <div class="container">
+          
+          <input id="screen" type="text" disabled="disabled">
             <button onclick="EnterNumber(7)" onclick="EnterNumbers(7)" class="zone seven">7</button>
             <button onclick=EnterNumber(8) class="zone eight">8</button>
             <button onclick=EnterNumber(9) class="zone nine">9</button>
@@ -20,17 +24,18 @@
             <button onclick=EnterNumber(5) class="zone five">5</button>
             <button onclick=EnterNumber(6) class="zone six">6</button>
             <button onclick=Add() class="zone Add">+</button>
-            <button class="zone Subtract">-</button>
+            <button onclick=Subtract() class="zone Subtract">-</button>
             <button onclick=EnterNumber(3) class="zone two">3</button>
             <button onclick=EnterNumber(2) class="zone three">2</button>
             <button onclick=EnterNumber(1) class="zone one">1</button>
-            <button class="zone Multipy">x</button>
-            <button class="zone Divide">/</button>
+            <button onclick=Multiply() class="zone Multipy">x</button>
+            <button onclick=Divide() class="zone Divide">/</button>
             <button onclick=EnterNumber(0) class="zone zero">0</button>
-            <button class="zone decimal">.</button>
-            <button class="zone plusMinus">+/-</button>
+            <button id="disable" onclick=EnterNumber(encodeURI(decimal)) class="zone decimal">.</button>
+            <button id=toggle onclick="myFunction()">+/-</button>
             <button onclick=equal() class="zone2 Equal">=</button>
             
+    
     </div>
 <script type="text/javascript" src="script.js"></script>
 </body>
