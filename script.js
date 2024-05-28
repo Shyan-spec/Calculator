@@ -42,6 +42,8 @@ function negOrPos() {
 
 function getNum2() {
   num2 = parseFloat(getScreen());
+
+  return num2
 }
 
 function Add() {

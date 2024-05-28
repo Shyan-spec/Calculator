@@ -1,5 +1,5 @@
 // calculator.test.js
-const { clears, EnterNumber, Add, Multiply, Divide, Subtract, equal, setScreen, getScreen, negOrPos } = require('../src/script');
+const { clears, EnterNumber, Add, Multiply, Divide, Subtract, equal, setScreen, getScreen, negOrPos, getNum2 } = require('../script');
 
 beforeEach(() => {
   // Set up the DOM elements required for the tests
@@ -79,5 +79,29 @@ describe('Testing negOrPos Button', () => {
 
         expect(result).toBe(expected);
     })
+})
+
+
+describe('Testing the clear feature', () => {
+    
+    beforeEach(() => {
+        // Set up the DOM elements required for the tests
+        document.body.innerHTML = `
+          <input id="screen" type="text" value="0">
+          <button id="disable"></button>
+        `;
+        setScreen('6');
+        Divide();
+        EnterNumber(3);
+        
+      });
+        test('The clear button should clear the screen and variables', () => {
+        
+        clears()
+        const result = parseFloat(getScreen())
+        const expected = '' || 0
+        expect(result).toBe(expected);
+        })
+        
 })
  
